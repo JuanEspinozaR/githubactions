@@ -1,0 +1,18 @@
+key: Hola mundo
+person:
+  name: Juan
+  lastName: Espinoza
+  age: 28
+  city: Torreon Coahuila
+  items:
+    - item1
+    - item2
+    - item3
+  items2:
+    - item1: hola
+    - item2: hola
+    - item3: hola
+
+scripts: |
+  touch "hola.txt"
+  echo "hola"
