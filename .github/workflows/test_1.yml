@@ -7,3 +7,8 @@ jobs:
     steps:
       - name: Hola Mundo
         run: echo "Hola mundo"
+  other:
+    runs-on: ubuntu-latest
+    steps:
+      - name: LS
+        run: echo "Hola Mundo des gh actions"
