@@ -1,6 +1,6 @@
 name: "Hola mundo"
 
-on: [push]
+on: [push, pull_request]
 jobs:
   hola:
     runs-on: ubuntu-latest
@@ -8,9 +8,9 @@ jobs:
       - name: Hola Mundo
         run: echo "Hola mundo"
       - name: touch file
-        run: touch config.xml 
+        run: touch config.xml
       - name: Set xml content
-        run: echo "<argument>Element One</argument>" > config.xml 
+        run: echo "<argument>Element One</argument>" > config.xml
       - name: Read file
         run: cat config.xml
   other:
