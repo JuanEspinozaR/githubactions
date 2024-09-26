@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: LS
-        run: echo "Hola Mundo des gh actions"
+        run: ls -al
+        #run: echo "Hola Mundo des gh actions"
