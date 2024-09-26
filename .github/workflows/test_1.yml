@@ -15,7 +15,7 @@ jobs:
         run: cat config.xml
   other:
     runs-on: ubuntu-latest
+    needs: hola #needs tag specify which job must finish/ or be completed to start this job
     steps:
       - name: LS
         run: ls -al
-        #run: echo "Hola Mundo des gh actions"
