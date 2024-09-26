@@ -7,6 +7,12 @@ jobs:
     steps:
       - name: Hola Mundo
         run: echo "Hola mundo"
+      - name: touch file
+        run: touch config.xml 
+      - name: Set xml content
+        run: echo "<argument>Element One</argument>" > config.xml 
+      - name: Read file
+        run: cat config.xml
   other:
     runs-on: ubuntu-latest
     steps:
