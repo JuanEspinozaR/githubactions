@@ -14,3 +14,4 @@ lesson 4:
             uses: SamKirkland/FTP-Deploy-Action@v4.3.5
 
 lesson 5:
+ On this lession, We create a new yaml file, and there We define some steps to instal curl packages, in the last step, We call a .sh file where We defined how to install curl packages
