@@ -1,6 +1,13 @@
 name: "Hola mundo"
 
-on: [push, pull_request]
+#on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   hola:
     runs-on: ubuntu-latest
