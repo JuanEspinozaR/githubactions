@@ -1,26 +1,14 @@
-name: Test
+name: Test composite action
 
 on: [push]
 
 jobs:
-  test-build:
+  local-action:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.0
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
       - name: ls
-        run: ls -al
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.4
-        with: 
-          node-version: latest
-      - name: node version
-        run: node --version
-
-      - name: PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
-      - name: php-version
-        run: php --version
+        uses: ./.github/actions/my-action

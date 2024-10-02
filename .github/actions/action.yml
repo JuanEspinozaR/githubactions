@@ -1,0 +1,12 @@
+#File to create actions
+
+name: "My action"
+description: "Test my action"
+
+runs:
+  using: "composite" # composite allow us to group by commons step and call from differents workflows
+  
+  steps:
+    - name: ls
+      run: ./.github/actions/my-action
+      shell: bash

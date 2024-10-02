@@ -15,3 +15,6 @@ lesson 4:
 
 lesson 5:
  On this lession, We create a new yaml file, and there We define some steps to instal curl packages, in the last step, We call a .sh file where We defined how to install curl packages
+lesson 6:
+ We used defined actions from github marketplace, one of them were node setup and php action.
+ We learn how to use and configure actions from marketplace
