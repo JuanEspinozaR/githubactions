@@ -12,3 +12,5 @@ jobs:
       
       - name: ls
         uses: ./.github/actions/my-action
+      - name: Show file Content
+        run: cat file-tst.txt

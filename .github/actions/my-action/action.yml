@@ -1,4 +1,4 @@
-#File to create actions
+#This actions example is to create a file with text
 
 name: "My action"
 description: "Test my action"
@@ -8,5 +8,8 @@ runs:
   
   steps:
     - name: Hola mundo
-      run: echo "Hola mundo"
+      run: |
+          mkdir folder-tst
+          cd folder-tst
+          echo "Hola mundo" > file-tst.txt
       shell: bash
