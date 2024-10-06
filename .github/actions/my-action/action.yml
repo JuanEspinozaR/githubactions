@@ -5,21 +5,24 @@ description: "Test my action"
 
 inputs:
   message:
-    description: "The message to print"
+    description: "Message file description"
     required: true
     default: "Hello this is this is the default message"
   folder-name:
-    description: "folder-tst"
+    description: "Folder name"
     required: true
-    default: "nothing"
-
+    default: "folder"
+  file-name:
+    description: "File name"
+    required: true
+    default: "file.txt"
 runs:
   using: "composite" # composite allow us to group by commons step and call from differents workflows
 
   steps:
     - name: Hola mundo
       run: |
-        mkdir folder-tst
-        cd  $({ inputs.folder-name })
-        echo "$({ inputs.message })" > file-tst.txt
+        mkdir ${{ inputs.folder-name }}
+        cd  ${{ inputs.folder-name }}
+        echo "${{ inputs.message }}" > ${{ inputs.file-name }}
       shell: bash
