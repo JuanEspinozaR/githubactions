@@ -13,8 +13,9 @@ jobs:
       - name: ls
         uses: ./.github/actions/my-action
         with:
-          message: "Wlecome to github-actions, thanks for type this message :D"
+          message: "Welcome to github-actions, thanks for type this message :D"
           folder-name: "folder-tst"
+          file-name: "file-tst.txt"
       - name: Show file Content
         run: |
             cd folder-tst
