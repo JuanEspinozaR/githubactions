@@ -18,3 +18,24 @@ lesson 5:
 lesson 6:
  We used defined actions from github marketplace, one of them were node setup and php action.
  We learn how to use and configure actions from marketplace
+lesson 7:
+ Reuse Actions, this video explains how to create actions for other actions and developers and how to call them.
+lesson 7:
+ We learned how to send and get parameters for githubactions reuse
+
+ To get a parameter, we must add inputs section:
+  
+inputs:
+  message: #parameter name
+    description: "The message to print" 
+    required: true
+    default: "Hello this is this is the default message"
+
+For send parameters, We must add with parameter after call reusable workflow
+      
+      
+      - name: ls
+        uses: ./.github/actions/my-action
+        with:
+          message: "Wlecome to github-actions, thanks for type this message :D"
+          folder-name: "folder-tst"

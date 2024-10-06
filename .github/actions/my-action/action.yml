@@ -3,13 +3,23 @@
 name: "My action"
 description: "Test my action"
 
+inputs:
+  message:
+    description: "The message to print"
+    required: true
+    default: "Hello this is this is the default message"
+  folder-name:
+    description: "folder-tst"
+    required: true
+    default: "nothing"
+
 runs:
   using: "composite" # composite allow us to group by commons step and call from differents workflows
-  
+
   steps:
     - name: Hola mundo
       run: |
-          mkdir folder-tst
-          cd folder-tst
-          echo "Hola mundo" > file-tst.txt
+        mkdir folder-tst
+        cd  $({ inputs.folder-name })
+        echo "$({ inputs.message })" > file-tst.txt
       shell: bash
