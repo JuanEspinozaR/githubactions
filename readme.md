@@ -53,3 +53,7 @@ inputs:
 ```
 
 For send parameters, We must add with parameter after call reusable workflow
+
+Lesson 9:
+
+Working with services, services are based on docker images. We can pull a docker image from docker registry and work with it on my workflow
