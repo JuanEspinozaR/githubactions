@@ -21,6 +21,6 @@ jobs:
             cd folder-tst
             cat file-tst.txt
       - name: Run docker image
-        uses: ../.github/actions/docker-action
+        uses: ./.github/actions/docker-action
 
       
