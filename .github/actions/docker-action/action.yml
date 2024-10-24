@@ -1,0 +1,9 @@
+name: "Services composite action"
+description: "This action works with services"
+
+runs: 
+  using: "composite"
+  steps:
+    - name: Test container
+      run: docker --version
+      shell: bash
