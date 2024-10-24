@@ -1,5 +1,5 @@
 #This actions example is to create a file with text
-
+#This main action is from lecture/lesson 6 to lesson 9
 name: "My action"
 description: "Test my action"
 
